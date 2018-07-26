@@ -7,3 +7,8 @@ class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question
         fields = ['question_text','pub_date','uuid','choice']
+
+class QuestionListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Question
+        fields = ['question_text','pub_date','uuid']
